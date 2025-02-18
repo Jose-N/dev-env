@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# tiling window manager
+brew install --cask amethyst

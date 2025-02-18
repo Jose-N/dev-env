@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# better cat
+brew install bat
+
+# better find 
+brew install fd
+
+# better ls
+brew install eza
+
+# command line fuzzy finder
+brew install fzf
+
+# command line json processer
+brew install jq
+
+# tldr for man pages
+brew install tlrc
+
+# search tool
+brew install ripgrep
