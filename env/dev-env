@@ -44,4 +44,14 @@ copy_dir() {
 	popd > /dev/null
 }
 
+copy_file() {
+	from=$1
+	to=$2
+	name=$(basename $from)
+
+	execute rm  $to/$name
+	execute cp $from $to/$name
+}
+
 copy_dir .config ~/.config
+copy_file .specialrc $HOME
