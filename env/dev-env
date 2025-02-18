@@ -54,4 +54,5 @@ copy_file() {
 }
 
 copy_dir .config ~/.config
-copy_file .specialrc $HOME
+copy_file .zshrc $HOME
+copy_file .p10k.zsh $HOME

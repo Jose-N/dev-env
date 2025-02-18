@@ -1,4 +1,14 @@
 #!/usr/bin/env bash
 
+# Install powerlevel10k theme
+brew install powerlevel10k
+
+# Install auto-suggestions
+brew install zsh-autosuggestions
+
+# Install syntax-highlighting
+brew install zsh-syntax-highlighting
+
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+

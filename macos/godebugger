@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# install delve an open source go debugger
+go install github.com/go-delve/delve/cmd/dlv@latest
