@@ -57,15 +57,13 @@ alias personal="cd ~/personal-projects/"
 alias lzd='lazydocker'
 alias lg='lazygit'
 
-
-# Tokens
-
 # Exports
 export EDITOR="nvim"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export GOPATH="/Users/jose.naylor/go"
 export PATH="$GOPATH/bin/:$PATH"
 
+source ~/.tokens.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme

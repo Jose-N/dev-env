@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Install Lazy Docker
+brew install jesseduffield/lazydocker/lazydocker
+
+# Install Lazy Git
+brew install jesseduffield/lazygit/lazygit
+
+# Install Lazy SQL
+brew tap jorgerojas26/lazysql
+brew install lazysql
