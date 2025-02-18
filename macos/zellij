@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Install Terminal Multiplexer
+brew install zellij

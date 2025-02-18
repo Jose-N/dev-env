@@ -55,7 +55,8 @@ alias work="cd ~/go/src/go.finxact.io/engineering/core/"
 alias learning="cd ~/learning/"
 alias personal="cd ~/personal-projects/"
 alias lzd='lazydocker'
-alias lg='lazygit'
+alias lzg='lazygit'
+alias lzsql='lazysql'
 
 # Exports
 export EDITOR="nvim"
