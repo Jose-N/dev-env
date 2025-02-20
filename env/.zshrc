@@ -63,6 +63,7 @@ export EDITOR="nvim"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export GOPATH="/Users/jose.naylor/go"
 export PATH="$GOPATH/bin/:$PATH"
+export PATH="$HOME/.local/scripts:$PATH"
 
 source ~/.tokens.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh

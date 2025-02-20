@@ -54,5 +54,9 @@ copy_file() {
 }
 
 copy_dir .config ~/.config
+copy_dir .local ~/.local
+
 copy_file .zshrc $HOME
 copy_file .p10k.zsh $HOME
+copy_file .tmux.conf $HOME
+copy_file .ready-tmux $HOME
