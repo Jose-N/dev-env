@@ -3,7 +3,7 @@
 tmux rename-window docker
 tmux send-keys "lzd" ^M
 tmux neww -n editor
-tmux send-keys "vim" ^M
+tmux send-keys "nvim" ^M
 tmux split-window -h -p 25
 tmux send-keys "godotenv "
 tmux split-window -v -p 25

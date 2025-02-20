@@ -64,6 +64,7 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export GOPATH="/Users/jose.naylor/go"
 export PATH="$GOPATH/bin/:$PATH"
 export PATH="$HOME/.local/scripts:$PATH"
+export PATH="$HOME/dev-env/env:$PATH"
 
 source ~/.tokens.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
