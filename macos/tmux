@@ -2,3 +2,6 @@
 
 # Install tmux
 brew install tmux
+
+# Install tmux plugin manager
+git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
