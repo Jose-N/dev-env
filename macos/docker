@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Install docker-compose
+brew install docker-compose
