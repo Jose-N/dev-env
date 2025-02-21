@@ -13,7 +13,7 @@ config.window_decorations = 'RESIZE|INTEGRATED_BUTTONS'
 config.window_background_image = '/Users/jose.naylor/dev-env/env/.config/wezterm/nightcity-bright.png'
 config.window_background_image_hsb = {
   -- Darken the background image by reducing it to 1/3rd
-  brightness = 0.3,
+  brightness = 0.1,
 }
 config.keys= {
 	{ key = 'LeftArrow', mods = 'CMD', action = action.SendKey { key = 'Home' } },
