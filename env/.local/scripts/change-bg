@@ -11,7 +11,7 @@ while [[ $# > 0 ]]; do
 	shift
 done
 
-bg=$(find /Users/jose.naylor/anime-bg -mindepth 1 -maxdepth 1 -type f | fzf)
+bg=$(find $HOME/anime-bg -mindepth 1 -maxdepth 1 -type f | fzf)
 if [[ -z "$bg" ]];then
 	exit 0
 fi

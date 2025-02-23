@@ -1,6 +1,18 @@
 #!/usr/bin/env bash
 
-selected=$(find /Users/jose.naylor/go/src/go.finxact.io/engineering -mindepth 2 -maxdepth 2 -type d | fzf)
+workspace=$(printf "Personal\nFinxact\n" | fzf)
+
+if [[ -z "$workspace" ]];then
+	exit 0
+fi
+
+selected=""
+if [[ "$workspace" == "Personal" ]]; then
+	selected=$(find $HOME/Projects -mindepth 1 -maxdepth 1 -type d | fzf)
+elif [[ "$workspace" == "Finxact" ]]; then
+	selected=$(find $HOME/go/src/go.finxact.io/engineering -mindepth 2 -maxdepth 2 -type d | fzf)
+fi
+
 if [[ -z "$selected" ]];then
 	exit 0
 fi
