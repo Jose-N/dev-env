@@ -51,17 +51,15 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-alias work="cd ~/go/src/go.finxact.io/engineering/core/"
-alias learning="cd ~/learning/"
-alias personal="cd ~/personal-projects/"
 alias lzd='lazydocker'
 alias lzg='lazygit'
 alias lzsql='lazysql'
+alias ls='eza --icons'
 
 # Exports
 export EDITOR="nvim"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-export GOPATH="/Users/jose.naylor/go"
+export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin/:$PATH"
 export PATH="$HOME/.local/scripts:$PATH"
 export PATH="$HOME/dev-env/env:$PATH"
