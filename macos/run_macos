@@ -33,7 +33,7 @@ execute() {
 log "$script_dir -- $filter"
 
 cd $script_dir
-scripts=$(find ./macos -type f -maxdepth 1 -mindepth 1 -perm +111 | sort -n)
+scripts=$(find ./macos_install -type f -maxdepth 1 -mindepth 1 -perm +111 | sort -n)
 
 for script in $scripts; do
 	if echo "$script" | grep -qv "$filter"; then

@@ -1,0 +1,45 @@
+#!/usr/bin/env Bash
+
+dry="0"
+
+while [[ $# > 0 ]]; do
+	if [[ $1 == "--dry" ]]; then
+		dry="1"
+	else
+		filter="$1"
+	fi
+	shift
+done
+
+bg=$(find $HOME/anime-bg -mindepth 1 -maxdepth 1 -type f | fzf)
+if [[ -z "$bg" ]];then
+	exit 0
+fi
+
+bg_file_name=$(basename $bg)
+
+
+log() {
+	if [[ $dry == "1" ]]; then
+		echo "[DRY RUN]: $@"
+	else
+		echo "$@"
+	fi
+}
+
+execute() {
+	log "execute $@"
+	if [[ $dry == "1" ]]; then
+		return
+	else
+		"$@"	
+	fi
+}
+
+copy_file() {
+	from=$1
+
+	execute cp $from $HOME/.config/wezterm/bg.png
+}
+
+copy_file $bg 
