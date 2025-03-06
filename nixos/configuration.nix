@@ -113,6 +113,7 @@
     pulsemixer
     playerctl
     obs-studio
+    legcord
   ];
 
   # Tiling Window Manager
