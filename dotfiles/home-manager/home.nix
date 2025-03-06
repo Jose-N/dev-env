@@ -73,6 +73,7 @@
       source = ~/dev-env/dotfiles/nvim;
       recursive = true;
     };
+    ".ready-tmux".source = ~/dev-env/dotfiles/ready-tmux;
     ".tmux.conf".source = ~/dev-env/dotfiles/tmux.conf;
     ".tmux/plugins/tpm".source = builtins.fetchGit {
       url = "https://github.com/tmux-plugins/tpm";
@@ -84,6 +85,10 @@
     };
     ".config/waybar" = {
       source = ~/dev-env/dotfiles/waybar;
+      recursive = true;
+    };
+    ".local/scripts" = {
+      source = ~/dev-env/dotfiles/local/scripts;
       recursive = true;
     };
   };
