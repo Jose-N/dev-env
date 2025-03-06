@@ -35,6 +35,35 @@
     pulse.enable = true;
   };
 
+  # Nvidia
+  # Enable Open GL
+  hardware.graphics = {
+    enable = true;
+  };
+
+  # Load Nvidia drivers for Xorg and Wayland
+  services.xserver.videoDrivers = ["nvidia"];
+
+  hardware.nvidia = {
+    # Modesetting is required
+    modesetting.enable = true;
+
+    # Enable if having issues with application crashes after waking from sleep
+    powerManagement.enable = false;
+
+    # Turns off GPU when not in use. Experimental only work on Turing or newer GPUs
+    powerManagement.finegrained = false;
+
+    # Nvidia open source kernel module. Support is limited to Turing or newer GPUs
+    open = true;
+
+    # Nvidia settings menu, accessible via 'nvidia-settings'
+    nvidiaSettings = true;
+
+    # Driver version
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
+  };
+
   # Set your time zone.
   time.timeZone = "America/New_York";
 
@@ -83,6 +112,7 @@
     pavucontrol	# Pulse Audio GUI
     pulsemixer
     playerctl
+    obs-studio
   ];
 
   # Tiling Window Manager
