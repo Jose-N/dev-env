@@ -78,6 +78,14 @@
       url = "https://github.com/tmux-plugins/tpm";
       rev = "99469c4a9b1ccf77fade25842dc7bafbc8ce9946";
     };
+    ".config/rofi" = {
+      source = ~/dev-env/dotfiles/rofi;
+      recursive = true;
+    };
+    ".config/waybar" = {
+      source = ~/dev-env/dotfiles/waybar;
+      recursive = true;
+    };
   };
 
   # Let Home Manager install and manage itself.
