@@ -35,8 +35,10 @@
     tmux
     neovim
     go
+    delve
     lua
     cargo
+    zig
   ];
 
   # Home Manager can also manage your environment variables through

@@ -105,6 +105,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    bash
     waybar 	# Status Bar
     hyprpaper	# Wallpaper Manager
     rofi	# Application Launcher

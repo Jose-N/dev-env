@@ -1,4 +1,4 @@
-#!/usr/bin/env Bash
+#!/usr/bin/env bash
 
 dry="0"
 
